@@ -14,7 +14,7 @@
             *ngFor="let nivel of niveles"
             (click)="verDetalleNivel(nivel.id)">
               <ion-thumbnail slot="start">
-                <img alt="Silhouette of mountains" src="../../assets/img/ds.jpeg" />
+                <img alt="Silhouette of mountains" src="{{nivel.imagen}}" />
               </ion-thumbnail>
                 <ion-label color="light" style="font-family: 'Courier New', Courier, monospace;">{{nivel.nombre}}</ion-label>
             </ion-item>

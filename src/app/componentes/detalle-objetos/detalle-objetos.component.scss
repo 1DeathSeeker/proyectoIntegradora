@@ -3,7 +3,8 @@ div{
   }
   ion-card{
       font-family:'Courier New', Courier, monospace;
-      color: #17224b;
+      background-color: rgba(240, 248, 255, 0.164);
+      color: #ffffff;
       border-radius: 25px;
       text-align: center;
     }
@@ -11,16 +12,16 @@ div{
       text-align: center;
       font-weight: bold;
       font-size: large;
-      color: #17224b;
+      color: #ffffff;
     }
     ion-card-subtitle{
       text-align: center;
       font-weight: bold;
-      color: #17224b;
+      color: #ffffff;
     }
     ion-card-content{
       font-family:'Courier New', Courier, monospace;
-      color:#17224b;
+      color:#ffffff;
     }
   
     ion-col {
@@ -36,8 +37,9 @@ div{
   
     img{
       border-start-start-radius: 15px 15px 0px 0px;
-      width: 300px;
-      height: 300px;
+      margin-top: 20px;
+      width: 250px;
+      height: 250px;
     }
   
   
