@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { DataJefe1 } from 'src/app/interfaces/interfaces';
+import { DataJefe } from 'src/app/interfaces/interfaces';
 import { ConsultasService } from 'src/app/services/consultas.service';
 
 @Component({
@@ -12,7 +12,7 @@ export class DetalleJefesComponent implements OnInit {
 
   constructor(private servicioConsulta:ConsultasService, private modalCtrl:ModalController) { }
   @Input()id:number;
-  jefe:DataJefe1={};
+  jefe:DataJefe={};
 
   regresar() {
     this.modalCtrl.dismiss();
@@ -20,7 +20,7 @@ export class DetalleJefesComponent implements OnInit {
 
   ngOnInit() {
     this.servicioConsulta.getJefe(this.id)
-    .subscribe((resp:DataJefe1)=>{
+    .subscribe((resp:DataJefe)=>{
       console.log('Jefe',resp)
       this.jefe=resp
     })

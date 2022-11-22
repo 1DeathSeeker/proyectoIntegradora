@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { DataEnemigo1 } from 'src/app/interfaces/interfaces';
+import { DataEnemigo } from 'src/app/interfaces/interfaces';
 import { ConsultasService } from 'src/app/services/consultas.service';
 
 @Component({
@@ -12,7 +12,7 @@ export class DetalleEnemigosComponent implements OnInit {
 
   constructor(private servicioConsulta:ConsultasService, private modalCtrl:ModalController) { }
   @Input()id:number;
-  enemigo:DataEnemigo1={};
+  enemigo:DataEnemigo={};
 
   regresar() {
     this.modalCtrl.dismiss();
@@ -20,7 +20,7 @@ export class DetalleEnemigosComponent implements OnInit {
     
   ngOnInit() {
     this.servicioConsulta.getEnemigo(this.id)
-    .subscribe((resp:DataEnemigo1)=>{
+    .subscribe((resp:DataEnemigo)=>{
       console.log('Enemigo',resp)
       this.enemigo=resp;
     })

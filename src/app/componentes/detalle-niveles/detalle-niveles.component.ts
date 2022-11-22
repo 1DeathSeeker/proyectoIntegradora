@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { DataNivel1 } from 'src/app/interfaces/interfaces';
+import { DataNivel } from 'src/app/interfaces/interfaces';
 import { ConsultasService } from 'src/app/services/consultas.service';
 
 @Component({
@@ -12,7 +12,7 @@ export class DetalleNivelesComponent implements OnInit {
 
   constructor(private servicioConsulta: ConsultasService, private modalCtrl:ModalController) { }
   @Input()id:number;
-  nivel:DataNivel1={};
+  nivel:DataNivel={};
 
   regresar() {
     this.modalCtrl.dismiss();
@@ -21,7 +21,7 @@ export class DetalleNivelesComponent implements OnInit {
   ngOnInit() {
 
     this.servicioConsulta.getNivel(this.id)
-    .subscribe((resp:DataNivel1)=>{
+    .subscribe((resp:DataNivel)=>{
       console.log('Nivel',resp)
       this.nivel=resp;
     })

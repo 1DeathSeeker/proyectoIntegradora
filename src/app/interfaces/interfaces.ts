@@ -26,17 +26,6 @@ export interface Stats2 {
   vida?: string;
 }
 
-export interface DataPersonaje1 {
-    avatar?: string;
-    descripcion?: string;
-    habilidad?: string;
-    id?: string;
-    imagen?: string;
-    nombre?: string;
-    stats?: Stats2;
-  }
-
-
   //Niveles
 export interface DataNivel {
   Ubicacion?: string;
@@ -45,14 +34,6 @@ export interface DataNivel {
   nombre?: string;
 }
 
-export interface DataNivel1 {
-    Ubicacion?: string;
-    id?: string;
-    imagen?: string;
-    nombre?: string;
-  }
-
-
 //Logros
 export interface DataLogro {
   descripcion?: string;
@@ -60,13 +41,6 @@ export interface DataLogro {
   imagen?: string;
   nombre?: string;
 }
-
-export interface DataLogro1 {
-    descripcion?: string;
-    id?: string;
-    imagen?: string;
-    nombre?: string;
-  }
 
 
 //Jefes
@@ -78,24 +52,8 @@ export interface DataJefe {
   imagen?: string;
   nivel?: string;
   nombre?: string;
-  stats?: Stats3;
+  stats?: Stats;
 }
-
-export interface DataJefe1 {
-    avatar?: string;
-    descripcion?: string;
-    habilidad?: string;
-    id?: string;
-    imagen?: string;
-    nivel?: string;
-    nombre?: string;
-    stats?: Stats3;
-  }
-
-  export interface Stats3 {
-    dano: string;
-    vida: string;
-  }
 
 
 //Enemigos
@@ -110,19 +68,9 @@ export interface DataEnemigo {
 }
 
 export interface Stats {
-  dano: string;
-  vida: string;
+  dano?: string;
+  vida?: string;
 }
-
-export interface DataEnemigo1 {
-    avatar?: string;
-    descripcion?: string;
-    id?: string;
-    imagen?: string;
-    nivel?: string;
-    nombre?: string;
-    stats?: Stats;
-  }
 
 //Objetos
 
@@ -132,10 +80,3 @@ export interface DataObjeto{
   imagen?: string;
   nombre?: string;
 }
-
-export interface DataObjeto1 {
-    descripcion?: string;
-    id?: string;
-    imagen?: string;
-    nombre?: string;
-  }
