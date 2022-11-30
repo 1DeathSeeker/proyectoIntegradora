@@ -73,8 +73,8 @@ export class AppComponent {
   }
   async openAlert(){
     const alert = await this.alertController.create({
-      header:'Conexión a internet',
-      message:'No tienes conexión',
+      header:'No tienes conexión',
+      message:'Revisa tu conexión a internet',
       buttons:[{
         text:'Ok',
         handler:()=>{
