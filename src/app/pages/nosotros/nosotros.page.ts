@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NosotrosPage implements OnInit {
   opcionesSlide={
-    slidesPerView:1,
+    slidesPerView:1.1,
     freeMode:false
   }
   constructor() { }

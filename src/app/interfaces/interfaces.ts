@@ -13,7 +13,7 @@ export interface DataPersonaje {
   avatar?: string;
   descripcion?: string;
   habilidad?: string;
-  id?: string;
+  id?: number;
   imagen?: string;
   nombre?: string;
   stats?: Stats2;
@@ -29,7 +29,7 @@ export interface Stats2 {
   //Niveles
 export interface DataNivel {
   Ubicacion?: string;
-  id?: string;
+  id?: number;
   imagen?: string;
   nombre?: string;
 }
@@ -37,7 +37,7 @@ export interface DataNivel {
 //Logros
 export interface DataLogro {
   descripcion?: string;
-  id?: string;
+  id?: number;
   imagen?: string;
   nombre?: string;
 }
@@ -48,7 +48,7 @@ export interface DataJefe {
   avatar?: string;
   descripcion?: string;
   habilidad?: string;
-  id?: string;
+  id?: number;
   imagen?: string;
   nivel?: string;
   nombre?: string;
@@ -60,7 +60,7 @@ export interface DataJefe {
 export interface DataEnemigo {
   avatar?: string;
   descripcion?: string;
-  id?: string;
+  id?: number;
   imagen?: string;
   nivel?: string;
   nombre?: string;
@@ -76,7 +76,7 @@ export interface Stats {
 
 export interface DataObjeto{
   descripcion?: string;
-  id?: string;
+  id?: number;
   imagen?: string;
   nombre?: string;
 }

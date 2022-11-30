@@ -29,6 +29,7 @@ export class PrincipalesPage implements OnInit {
   }
 
   ngOnInit() {
+    
     this.servicioConsulta.getDatos()
     .subscribe((resp:gameDB)=>{
       console.log('Principales',resp)

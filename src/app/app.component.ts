@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Network } from '@ionic-native/network/ngx'
+import { AlertController } from '@ionic/angular';
 interface elementosMenu{
   icono: string;
   nombre: string;
@@ -64,5 +66,23 @@ export class AppComponent {
     }
     
   ];
-  constructor() {}
+  constructor(private network: Network,public alertController:AlertController) {
+    window.addEventListener('offline',()=>{
+      this.openAlert();
+    })
+  }
+  async openAlert(){
+    const alert = await this.alertController.create({
+      header:'Conexión a internet',
+      message:'No tienes conexión',
+      buttons:[{
+        text:'Ok',
+        handler:()=>{
+          navigator['app'].exitApp();
+        }
+      }]
+    });
+    await alert.present();
+    
+  }
 }

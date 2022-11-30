@@ -12,7 +12,11 @@ export class DetalleEnemigosComponent implements OnInit {
 
   constructor(private servicioConsulta:ConsultasService, private modalCtrl:ModalController) { }
   @Input()id:number;
-  enemigo:DataEnemigo={};
+  enemigo:DataEnemigo={
+    stats:{
+      dano:''
+    }
+  };
 
   regresar() {
     this.modalCtrl.dismiss();

@@ -12,6 +12,11 @@ import { ConsultasService } from 'src/app/services/consultas.service';
 })
 export class NivelesPage implements OnInit {
 
+  opcionesSlide={
+    slidesPerView:1.1,
+    freeMode:false
+  }
+
   niveles:DataNivel[]=[];
 
   constructor(private servicioConsulta: ConsultasService, private modalCtrl:ModalController) { }

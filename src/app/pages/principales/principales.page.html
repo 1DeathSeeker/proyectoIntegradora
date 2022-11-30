@@ -3,22 +3,26 @@
 <ion-content>
     <div class="act" style="background-image: url('../../assets/img/backGround/principalesBG.jpg');">
         <br>
+      
         <ion-card>
             <ion-card-header>
             <ion-card-title>Personajes Principales</ion-card-title>
             </ion-card-header>
         </ion-card>
-        <ion-list>
-            <ion-item 
-            color="rgba(255, 255, 255, 0.075);"
-            *ngFor="let personaje of personajesPrincipales"
-            (click)="verDetallePersonaje(personaje.id)">
-              <ion-thumbnail slot="start">
-                <img alt="Silhouette of mountains" src="{{personaje.avatar}}" 
-                *ngIf="personaje.avatar">
-              </ion-thumbnail>
-                <ion-label color="light" style="font-family: 'Courier New', Courier, monospace;">{{personaje.nombre}}</ion-label>
-            </ion-item>
+        <ion-grid>
+          <ion-list>
+              <ion-item 
+              color="rgba(255, 255, 255, 0.075);"
+              *ngFor="let personaje of personajesPrincipales"
+              (click)="verDetallePersonaje(personaje.id)">
+                <ion-thumbnail slot="start">
+                  <img alt="Silhouette of mountains" src="{{personaje.avatar}}" 
+                  *ngIf="personaje.avatar">
+                </ion-thumbnail>
+                  <ion-label style="font-family: 'Courier New', Courier, monospace; color: #ffffff;">{{personaje.nombre}}
+                  <br>{{personaje.habilidad}}</ion-label>
+              </ion-item>
           </ion-list>
+        </ion-grid>
     </div>
 </ion-content>

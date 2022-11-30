@@ -12,7 +12,11 @@ export class DetalleJefesComponent implements OnInit {
 
   constructor(private servicioConsulta:ConsultasService, private modalCtrl:ModalController) { }
   @Input()id:number;
-  jefe:DataJefe={};
+  jefe:DataJefe={
+      stats:{
+        dano:''
+      }
+  };
 
   regresar() {
     this.modalCtrl.dismiss();

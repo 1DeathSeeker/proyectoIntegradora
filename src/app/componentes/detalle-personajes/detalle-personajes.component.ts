@@ -12,7 +12,11 @@ export class DetallePersonajesComponent implements OnInit {
 
   constructor(private servicioConsulta: ConsultasService,private modalCtrl:ModalController) { }
   @Input()id: number;
-  personajePrincipal: DataPersonaje={};
+  personajePrincipal: DataPersonaje={
+    stats:{
+      dano:''
+    }
+  };
 
   regresar() {
     this.modalCtrl.dismiss();

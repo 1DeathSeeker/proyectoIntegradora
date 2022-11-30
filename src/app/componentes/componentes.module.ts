@@ -8,11 +8,12 @@ import { DetalleEnemigosComponent } from './detalle-enemigos/detalle-enemigos.co
 import { DetalleJefesComponent } from './detalle-jefes/detalle-jefes.component';
 import { DetalleLogrosComponent } from './detalle-logros/detalle-logros.component';
 import { DetalleObjetosComponent } from './detalle-objetos/detalle-objetos.component';
+import { DetalleNivelesComponent } from './detalle-niveles/detalle-niveles.component';
 
 
 @NgModule({
-  declarations: [HeaderComponent,FooterComponent,DetallePersonajesComponent,DetalleEnemigosComponent,DetalleJefesComponent,DetalleLogrosComponent,DetalleObjetosComponent],
-  exports:[HeaderComponent,FooterComponent,DetallePersonajesComponent,DetalleEnemigosComponent,DetalleJefesComponent,DetalleLogrosComponent,DetalleObjetosComponent],
+  declarations: [HeaderComponent,FooterComponent,DetallePersonajesComponent,DetalleEnemigosComponent,DetalleJefesComponent,DetalleLogrosComponent,DetalleObjetosComponent,DetalleNivelesComponent],
+  exports:[HeaderComponent,FooterComponent,DetallePersonajesComponent,DetalleEnemigosComponent,DetalleJefesComponent,DetalleLogrosComponent,DetalleObjetosComponent,DetalleNivelesComponent],
   imports: [
     IonicModule,
     CommonModule

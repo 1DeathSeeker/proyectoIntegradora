@@ -5,7 +5,17 @@ ion-card-header {
   ion-card{
     background-color: rgba(0, 0, 0, 0.527);
     border-radius: 15px;
+    font-family:'Courier New', Courier, monospace;
+    color: #ffffff;
+
   }
   ion-card-content{
-    font-size: small;
+    font-size: x-small;
+    color: #ffffff;
+  }
+  ion-card-title{
+    color: #ffffff;
+  }
+  ion-card-subtitle{
+    color: #ffffff;
   }
